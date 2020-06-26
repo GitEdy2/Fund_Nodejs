@@ -1,15 +1,15 @@
-function soyAsincrona() {
-    console.log("Hola, soy una funcion asincrona");
-}
+var Callback = require('./async/callback.js');
 
-soyAsincrona();
+var callback = new Callback();
 
 
+console.log(`Iniciando proceso....`);
+callback.hola('Edison', function() {
+    callback.adios('Edison', function() {
+        console.log(`Terminando proceso....`);
+    })   
+});
 
-/* import Callback from './async/callback.js';
 
-function exec () {
-    Callback.soyAsincrona();
-}
 
-exec(); */
+
