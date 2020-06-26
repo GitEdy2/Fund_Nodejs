@@ -57,7 +57,7 @@ promises.hola('Edison')
 
 //--Async/Await--
 
-async function main() {
+/* async function main() {
     let nombre = await asyncAwait.hola('Edison');
     await asyncAwait.hablar();
     await asyncAwait.hablar();
@@ -67,9 +67,27 @@ async function main() {
 }
 
 console.log('...Iniciar Proceso...');
-main();
+main(); */
 //console.log('..Termina Proceso');
 
 
+//--Global--
 
+/* let i = 0;
+
+let intervalo = setInterval(() => {
+    console.log('Hola');
+    if (i === 3) {
+        clearInterval(intervalo);
+    }
+    i++
+}, 1000); */
+
+/* setImmediate(function() {
+    console.log('Hola');
+}); */
+
+//console.log(process);
+
+//console.log(__filename);
 
