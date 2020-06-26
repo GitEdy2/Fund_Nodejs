@@ -6,7 +6,7 @@ let intervalo = setInterval(() => {
         clearInterval(intervalo);
     }
     i++
-}, 1000); */
+}, 1000); 
 
 setImmediate(function() {
     console.log('Hola');
