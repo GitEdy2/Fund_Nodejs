@@ -2,11 +2,13 @@ var Callback = require('./async/callback.js');
 var CallbackHell = require('./async/callbackHell.js');
 var Promises = require('./async/promises.js');
 var AsyncAwait = require('./async/asyncAwait.js');
+var Fs = require('./modulos/fs.js');
 
 var callback = new Callback();
 var callbackHell = new CallbackHell();
 var promises = new Promises();
 var asyncAwait = new AsyncAwait();
+var file = new Fs();
 
 
 //--callback--
@@ -91,3 +93,11 @@ let intervalo = setInterval(() => {
 
 //console.log(__filename);
 
+//--Fyle System--
+
+/* file.leer(__dirname + '/modulos/archivo.txt', console.log);
+file.escribir(__dirname + '/modulos/archivo1.txt', 'Soy un archivo nuevo', console.log);
+file.borrar(__dirname + '/modulos/archivo1.txt', console.log);
+ */
+
+ //--Console--
