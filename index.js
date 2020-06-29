@@ -3,12 +3,14 @@ var CallbackHell = require('./async/callbackHell.js');
 var Promises = require('./async/promises.js');
 var AsyncAwait = require('./async/asyncAwait.js');
 var Fs = require('./modulos/fs.js');
+var Console = require('./modulos/console.js');
 
 var callback = new Callback();
 var callbackHell = new CallbackHell();
 var promises = new Promises();
 var asyncAwait = new AsyncAwait();
 var file = new Fs();
+var consola = new Console();
 
 
 //--callback--
@@ -101,3 +103,7 @@ file.borrar(__dirname + '/modulos/archivo1.txt', console.log);
  */
 
  //--Console--
+
+//consola.funcionConsole();
+
+//--Errores(try/catch)
